@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine? 💖</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Will You Be My Valentine? 💘</h1>
+        <div class="buttons">
+            <button id="yesBtn">Yes! 💕</button>
+            <button id="noBtn">No 😢</button>
+        </div>
+        <p id="message" class="hidden">Yay! Can't wait to celebrate with you! 🎉❤️</p>
+        
+        <!-- Mini-Game Selection Screen -->
+        <div id="gameSelection" class="hidden">
+            <h2>Choose a Game! 🎮</h2>
+            <button class="game-btn" id="catchHearts">🎯 Catch the Floating Hearts</button>
+            <button class="game-btn" id="loveLetter">💌 Love Letter Puzzle</button>
+            <button class="game-btn" id="findMe">💘 Find Me! (Hide & Seek)</button>
+        </div>
+
+        <!-- Mini-Game Area -->
+        <div id="gameArea" class="hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="games/hearts.js"></script>
+    <script src="games/loveletter.js"></script>
+    <script src="games/findme.js"></script>
+
+    <!-- Gift Selection Section -->
+<div id="giftSelection" class="hidden">
+    <h2>Choose Your Gift! 🎁</h2>
+    <p>Select a reward for playing!</p>
+    <div class="gift-options">
+        <button class="gift-btn" id="giftCookies">
+            <img src="images/pixel-cookie.png" alt="Heart Cookies">
+            Heart Cookies
+        </button>
+        <button class="gift-btn" id="giftPasta">
+            <img src="images/pixel-pasta.png" alt="Heart Pasta">
+            Heart Pasta
+        </button>
+        <button class="gift-btn" id="giftPics">
+            <img src="images/pixel-camera.png" alt="Hot Pics">
+            Hot Pics of Me
+        </button>
+    </div>
+    <p id="giftMessage"></p>
+</div>
+
+
+
+    <audio id="bgMusic" src="audio/love-music.mp3" loop></audio>
+    <button id="musicToggle">🎵 Toggle Music</button>
+</body>
+</html>
