@@ -23,6 +23,7 @@ function startFindMeGame() {
         document.getElementById("chibiCharacter").classList.remove("hidden");
         document.getElementById("resultMessage").innerHTML = "";
         document.getElementById("retryFindMe").classList.add("hidden");
+        setTimeout(() => document.dispatchEvent(new CustomEvent("giftTime")), 2500);
     });
 
     document.getElementById("wrong1").addEventListener("click", showWrongMessage);

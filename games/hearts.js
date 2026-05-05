@@ -74,6 +74,9 @@ function startCatchHearts() {
         `;
 
         document.getElementById("retryBtn").addEventListener("click", startCatchHearts);
-        
+
+        if (score >= 10) {
+            setTimeout(() => document.dispatchEvent(new CustomEvent("giftTime")), 2500);
+        }
     }
 }

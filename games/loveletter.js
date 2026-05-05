@@ -47,6 +47,7 @@ function startLoveLetterGame() {
         if (selectedWords.blank1 === "love" && selectedWords.blank2 === "pizza" && selectedWords.blank3 === "smile") {
             document.getElementById("resultMessage").innerHTML = "💖 You completed the love letter! So sweet! 💌 Try another game or choose your gift below!";
             document.getElementById("retryLoveLetter").classList.add("hidden");
+            setTimeout(() => document.dispatchEvent(new CustomEvent("giftTime")), 2500);
         } else {
             document.getElementById("resultMessage").innerHTML = "Oops! Try again! 😢";
             document.getElementById("retryLoveLetter").classList.remove("hidden");

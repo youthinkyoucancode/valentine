@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     giftPics.addEventListener("click", () => {
-        giftMessage.innerHTML = "🔥 Hehe... Enjoy your *special* surprise later! 😉💋";
+        giftMessage.innerHTML = "📸 Aww! A cute polaroid is on its way to your phone! 💖";
     });
 
     // Trigger gift selection when a mini-game is finished
